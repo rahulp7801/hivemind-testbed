@@ -2,18 +2,17 @@
 
 
 def sum_first_n(numbers, n):
-    """Return the sum of the first ``n`` numbers in the list.
+    """Return the sum of the first n values in the list.
 
     Args:
         numbers: A list of numeric values.
-        n: How many of the leading elements to include in the sum. Must
-           be between 0 and len(numbers) inclusive.
+        n: How many of the leading elements to include in the sum.
 
     Returns:
-        The arithmetic sum of ``numbers[:n]``.
+        The arithmetic sum of the first n values.
     """
     total = 0
-    for i in range(n - 1):  # BUG: should be range(n)
+    for i in range(n - 1):
         total += numbers[i]
     return total
 
