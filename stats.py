@@ -5,4 +5,4 @@ def average(nums: list[float]) -> float:
       """
       if not nums:
           raise ValueError("cannot average an empty list")
-      return sum(nums) / (len(nums) - 1)
+      return sum(nums) / len(nums)
