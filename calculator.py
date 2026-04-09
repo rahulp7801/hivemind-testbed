@@ -12,7 +12,7 @@ def sum_first_n(numbers, n):
         The arithmetic sum of the first n values.
     """
     total = 0
-    for i in range(n - 1):
+    for i in range(n):
         total += numbers[i]
     return total
 
